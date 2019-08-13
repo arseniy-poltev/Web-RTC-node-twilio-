@@ -1,0 +1,1624 @@
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    max-height: 1000px;
+}
+
+body a {
+    color: #000000;
+}
+
+body a:hover {
+    text-decoration: none;
+}
+
+.info .detail .simple_his {
+    inline-size: max-content;
+    inline-size: -moz-max-content;
+    inline-size: -webkit-max-content;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #454545;
+    font-size: 12px;
+    display: inline;
+}
+
+@media (min-width: 1500px) {
+    .chatBg .writing input {
+        width: 92% !important;
+        margin: 1% !important;
+    }
+
+    .chatBg .writing #send {
+        width: 4% !important;
+        margin: 1% !important;
+    }
+}
+
+@media (min-width: 1207px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .info ul li {
+        padding: 15px;
+        min-height: 72px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .infoBg {
+        padding: 5px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1207px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    .info ul li {
+        padding: 15px;
+        min-height: 100px;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .infoBg {
+        padding: 5px !important;
+    }
+}
+
+@media (min-width: 319px) and (max-width: 991px) {
+    body {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    /*.chatBg{*/
+    /*padding-left: 80px !important;*/
+    /*}*/
+    /*.chatBg .writing{*/
+    /*padding-left: 80px!important;*/
+    /*}*/
+    .infoBg {
+        padding-left: 80px !important;
+    }
+
+    .info ul li {
+        padding: 15px;
+        min-height: 72px;
+        cursor: pointer;
+        position: relative;
+    }
+
+}
+
+@media (max-width: 319px) {
+    body {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    /*.chatBg{*/
+    /*padding-left: 80px !important;*/
+    /*}*/
+    /*.chatBg .writing{*/
+    /*padding-left: 80px!important;*/
+    /*}*/
+    .chatBg .writing input {
+        width: 72% !important;
+    }
+
+    .chatBg .writing #send {
+        width: 20% !important;
+    }
+
+    .infoBg {
+        padding-left: 80px !important;
+    }
+
+    .info ul li {
+        padding: 15px;
+        min-height: 100px;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+.start {
+    height: 50%;
+    width: auto;
+    margin: 5% auto;
+    background: url("../images/trogj_background_02.png") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+input, #signin {
+    font: 20px "Lucida Grande", Helvetica, Arial, sans-serif;
+    border-width: 0 !important;
+    padding: 10px 30px !important;
+    text-align: center;
+    display: block;
+    margin: auto;
+    outline-style: none;
+}
+
+/*login*/
+.panel-login {
+    height: 100%;
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: url('../images/trogj_login_base.png') no-repeat center;
+    margin: 30px auto 0;
+    background-size: contain;
+}
+
+@media (max-width: 500px) and (min-width: 315px) {
+    .panel-login img {
+        margin: -15% auto 10% !important;
+        width: 40% !important;
+    }
+
+    .panel-login div {
+        font-size: 20px !important;
+        padding: 0 !important;
+    }
+
+    .panel-login input {
+        width: 60% !important;
+        margin: 0 auto 5% !important;
+        font-size: 12px;
+    }
+
+    .panel-login #signin {
+        width: 40% !important;
+    }
+}
+
+@media (max-width: 315px) {
+    .panel-login img {
+        margin: -15% auto 10% !important;
+    }
+
+    .panel-login div {
+        font-size: 12px !important;
+        padding: 0 !important;
+    }
+
+    .panel-login input {
+        width: 60% !important;
+        margin: 0 auto !important;
+        font-size: 6px;
+    }
+
+    .panel-login #signin {
+        width: 40% !important;
+    }
+}
+
+.panel-login img {
+    margin: -10% auto 10%;
+    width: 50%;
+    padding-left: 10px;
+}
+
+.panel-login div {
+    color: #498991;
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.panel-login input {
+    background: url("../images/trogj_signin_txtField_normal.png") no-repeat center;
+    width: 90%;
+    background-size: contain;
+    color: #ffffff;
+    margin: 0 auto 10%;
+}
+
+.panel-login input:focus {
+    background: url("../images/trogj_signin_txtField_active.png") no-repeat center;
+    width: auto;
+    min-height: 50%;
+    background-size: contain;
+    color: #ffffff;
+    margin: 0 auto 10%;
+}
+
+.panel-login input::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+
+.panel-login #signin {
+    background: url("../images/trogj_btn_signin_normal.png") no-repeat center;
+    color: #dddddd;
+    width: auto;
+    height: 40px;
+    margin-bottom: 10%;
+    background-size: contain;
+}
+
+.panel-login #signin:hover {
+    background: url("../images/trogj_btn_signin_hover.png") no-repeat center;
+    background-size: contain;
+    color: #dddddd;
+}
+
+.panel-login #signin:active {
+    background: url("../images/trogj_btn_signin_pressed.png") no-repeat center;
+    background-size: contain;
+    color: #dddddd;
+}
+
+/*modal*/
+.screen {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    display: none;
+}
+
+.login-modal {
+    max-width: 484px;
+    background: url("../images/trogj_04info_base.png") no-repeat center;
+    height: 130%;
+    margin: 0 auto auto;
+    background-size: contain;
+    position: relative;
+    padding: 1%;
+}
+
+.login-modal .close {
+    background: url("../images/trogj_btn_close_normal.png") no-repeat center;
+    background-size: contain;
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 3%;
+}
+
+@media (max-width: 600px) {
+
+}
+
+.login-modal .close:hover {
+    background: url("../images/trogj_btn_close_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.login-modal .close:active {
+    background: url("../images/trogj_btn_close_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.login-modal .phone {
+    width: 100%;
+    height: 30%;
+}
+
+.login-modal .phone img {
+    padding-left: 16%;
+    margin: 10% auto;
+    width: 50%;
+    height: 100%;
+}
+
+.login-modal div {
+    color: #498991;
+    font-size: 25px;
+    padding: 2% 10%;
+    text-align: center;
+}
+
+.login-modal input {
+    width: 60%;
+    height: 45px;
+    background: url("../images/trogj_signin_txtField2_normal.png") no-repeat center;
+    background-size: contain;
+    color: #6a6a6a;
+    margin: 5% auto;
+}
+
+.login-modal input:focus {
+    background: url("../images/trogj_signin_txtField2_active.png") no-repeat center;
+    background-size: contain;
+}
+
+.login-modal .otp_confirm {
+    background: url("../images/trogj_signin_btn_confirm_normal.png") no-repeat center;
+    background-size: contain;
+    margin: 5% auto;
+    width: 40%;
+    height: 41px;
+}
+
+.login-modal .otp_confirm:hover {
+    background: url("../images/trogj_signin_btn_confirm_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.login-modal .otp_confirm:active {
+    background: url("../images/trogj_signin_btn_confirm_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.login-modal .cancel {
+    background: url("../images/trogj_signin_btn_cancel_normal.png") no-repeat center;
+    background-size: contain;
+    margin: 5% auto 20%;
+    width: 40%;
+    height: 41px;
+}
+
+.login-modal .cancel:hover {
+    background: url("../images/trogj_signin_btn_cancel_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.login-modal .cancel:active {
+    background: url("../images/trogj_signin_btn_cancel_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+@media (max-width: 1510px) and (min-width: 1200px) {
+    .login-modal input {
+        font-size: 15px;
+        padding: auto 5%;
+    }
+}
+
+@media (max-width: 1020px) and (min-width: 600px) {
+    .login-modal input {
+        font-size: 14px;
+        padding: 0 2% !important;
+    }
+}
+
+@media (max-width: 600px) and (min-width: 380px) {
+    .login-modal div {
+        font-size: 20px !important;
+    }
+
+    .login-modal input {
+        font-size: 15px !important;
+        padding: 0 1% !important;
+    }
+
+    .login-modal .close {
+        right: 5% !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .login-modal div {
+        font-size: 15px;
+    }
+
+    .login-modal input {
+        width: 70% !important;
+        font-size: 10px !important;
+        padding: 0 1% !important;
+        margin: 0 auto;
+    }
+
+    .login-modal .close {
+        right: 10% !important;
+    }
+
+    .login-modal .otp_confirm {
+        margin: 0 auto;
+    }
+
+    .login-modal .cancel {
+        margin: 0 auto 10%;
+    }
+}
+
+/*dashboard*/
+
+.row {
+    margin: 0 !important;
+    height: 100%;
+    /*min-height: 450px;*/
+}
+
+.nav {
+    width: 80px;
+    height: 100%;
+    min-height: 450px;
+    position: fixed;
+    background-color: #219391;
+    z-index: 20;
+}
+
+.nav ul.calls {
+    position: absolute;
+    top: 0;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.nav ul.help_calls {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 10px;
+}
+
+.nav .pointer1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.nav .pointer2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.nav .pointer1 li, .nav .pointer2 li {
+    background: url("../images/trogj_02db_pointer.png") no-repeat right;
+    width: 26px;
+    height: 32px;
+}
+
+.nav ul.set {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 10px;
+}
+
+.nav ul.help_set {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    left: 50px;
+    margin: 10px;
+}
+
+li {
+    padding: 29px;
+    margin: auto;
+    list-style: none;
+}
+
+ul .db {
+    background: url("../images/trogj_02db_icn_db_normal.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_db {
+    background: url("../images/trogj_02db_icn_db_active.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_db1 {
+    background: url("../images/trogj_02db_tut_tooltip.png") no-repeat center;
+    width: 256px;
+    height: 46px;
+    margin: auto;
+    font-size: 12px;
+    position: relative;
+    /*padding-bottom: 60px;*/
+}
+
+ul .help_db1 span {
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ul .help_contact1 span {
+    position: absolute;
+    left: 37%;
+    top: 48%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ul .help_group1 span {
+    position: absolute;
+    left: 40%;
+    top: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ul .help_help1 span, ul .help_help222 span, ul .help_settings1 span {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    font-size: 18px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.help_contact_profile11 span {
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    font-size: 18px;
+    width: 200px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.help_contact_profile12 span {
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    width: 200px;
+    font-size: 18px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.help_contact_profile13 span {
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    font-size: 18px;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+ul .db img {
+    position: absolute;
+    float: right;
+}
+
+ul .db:hover {
+    background: url("../images/trogj_02db_icn_db_hover.png") no-repeat center;
+}
+
+ul .db:active {
+    background: url("../images/trogj_02db_icn_db_pressed.png") no-repeat center;
+}
+
+ul .contact {
+    background: url("../images/trogj_02db_icn_contact_normal_preview.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_contact {
+    background: url("../images/trogj_02db_icn_contact_active_preview.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_contact1 {
+    background: url("../images/trogj_02db_tut_tooltip_short.png") no-repeat center;
+    background-size: contain;
+    width: 186px;
+    height: 46px;
+    /*padding-bottom: 60px;*/
+    margin-left: 0;
+}
+
+ul .contact:hover {
+    background: url("../images/trogj_02db_icn_contact_hover_preview.png") no-repeat center;
+}
+
+ul .contact:active {
+    background: url("../images/trogj_02db_icn_contact_pressed_preview.png") no-repeat center;
+}
+
+ul .group {
+    background: url("../images/trogj_02db_icn_group_normal.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_group {
+    background: url("../images/trogj_02db_icn_group_active.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_group1 {
+    background: url("../images/trogj_02db_tut_tooltip_short.png") no-repeat center;
+    background-size: contain;
+    width: 186px;
+    height: 46px;
+    margin-left: 0;
+    color: black;
+}
+
+ul .group:hover {
+    background: url("../images/trogj_02db_icn_group_hover.png") no-repeat center;
+}
+
+ul .group:active {
+    background: url("../images/trogj_02db_icn_group_pressed.png") no-repeat center;
+}
+
+ul .settings {
+    background: url("../images/trogj_02db_icn_settings_normal.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_settings {
+    background: url("../images/trogj_02db_icn_settings_pressed.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_settings1 {
+    position: relative;
+    background: url("../images/trogj_02db_tut_tooltip_short.png") no-repeat center;
+    background-size: contain;
+    width: 186px;
+    height: 46px;
+    margin: auto;
+}
+
+ul .settings:hover {
+    background: url("../images/trogj_02db_icn_settings_hover.png") no-repeat center;
+}
+
+ul .settings:active {
+    background: url("../images/trogj_02db_icn_settings_pressed.png") no-repeat center;
+}
+
+ul .help {
+    background: url("../images/trogj_02db_icn_sms_normal.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_help111 {
+    background: url("../images/trogj_02db_icn_sms_pressed.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_help {
+    background: url("../images/trogj_02db_icn_help_pressed.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help_help222 {
+    position: relative;
+    padding: 0 !important;
+    background: url("../images/trogj_02db_tut_tooltip_short.png") no-repeat center;
+    width: 186px;
+    height: 46px;
+    margin: auto;
+}
+
+ul .help_help1 {
+    position: relative;
+    background: url("../images/trogj_02db_tut_tooltip_short.png") no-repeat center;
+    width: 186px;
+    height: 46px;
+    margin: auto;
+}
+
+ul .help:hover {
+    background: url("../images/trogj_02db_icn_sms_hover.png") no-repeat center;
+}
+
+ul .help:active {
+    background: url("../images/trogj_02db_icn_sms_pressed.png") no-repeat center;
+}
+
+ul .help1 {
+    background: url("../images/trogj_02db_icn_help_normal.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .help1:hover {
+    background: url("../images/trogj_02db_icn_help_hover.png") no-repeat center;
+}
+
+ul .help1:active {
+    background: url("../images/trogj_02db_icn_help_pressed.png") no-repeat center;
+}
+
+ul .logout {
+    background: url("../images/trogj_icn_sign_out_normal.png") no-repeat center;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+}
+
+ul .logout:hover {
+    background: url("../images/trogj_icn_sign_out_hover.png") no-repeat center;
+}
+
+/*jquery selector*/
+ul .activedb {
+    background: url("../images/trogj_02db_icn_db_active.png") no-repeat center;
+}
+
+ul .activecontact {
+    background: url("../images/trogj_02db_icn_contact_active_preview.png") no-repeat center;
+}
+
+ul .activegroup {
+    background: url("../images/trogj_02db_icn_group_active.png") no-repeat center;
+}
+
+ul .activesettings {
+    background: url("../images/trogj_02db_icn_settings_active.png") no-repeat center;
+}
+
+ul .activehelp {
+    background: url("../images/trogj_02db_icn_sms_active.png") no-repeat center;
+}
+
+.db a {
+    background: url("../images/trogj_02db_badge_big.png") no-repeat center;
+    width: 18px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #ffffff !important;
+    display: none;
+}
+
+/*dashboard*/
+/*left side*/
+.info {
+    background: url("../images/trogj_04info_base.png") no-repeat center;
+    background-size: cover;
+    padding: 0 0 0 80px;
+    overflow-y: auto;
+}
+
+.info p {
+    color: #26a8a6;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.divider {
+    padding: 0;
+    width: 100%;
+    height: 1px;
+    background: url("../images/trogj_02db_line.png") no-repeat center;
+    background-size: cover;
+}
+
+.info ul {
+    padding: 0;
+    position: relative;
+}
+
+.info .profile {
+    position: relative;
+    display: inline;
+    float: left;
+}
+
+.chat_comment {
+    white-space: nowrap;
+    width: 120px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: right;
+}
+
+.info .last_time {
+    display: inline;
+    float: right;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.info .badge {
+    position: absolute;
+    top: -2px !important;
+    right: -2px !important;
+
+}
+
+.info .detail {
+    padding-left: 10px;
+    position: relative;
+    display: inline;
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*center side*/
+.chatBg {
+    background: url("../images/bgPattern.png") center;
+    height: 100%;
+    padding: 50px 0;
+    z-index: 10;
+}
+
+@media (max-width: 992px) {
+    .chatBg {
+        padding: 50px 0 0 80px !important;
+    }
+
+    .chatBg .writing {
+        padding: 0 0 0 80px !important;
+    }
+}
+
+.chatBg .chat_content {
+    width: 100%;
+    height: 90%;
+    margin-bottom: 70px;
+    padding: 3%;
+    overflow-y: auto;
+}
+
+.chatBg .chat_content .received {
+    /*background: url("../images/trogj_03chat_bubble_light.png") center;*/
+    background-size: contain;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px 20px;
+    display: block;
+    clear: both;
+    float: left;
+    max-width: 60%;
+    color: #353535;
+    margin: 10px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.chatBg .chat_content .sent {
+    /*background: url("../images/trogj_03chat_bubble_dark.png") center;*/
+    /*background-size: cover;*/
+    background-color: #01a3a7;
+    border-radius: 10px;
+    padding: 0 20px 20px;
+    display: block;
+    clear: both;
+    float: right;
+    max-width: 60%;
+    word-wrap: break-word;
+    margin: 10px;
+    color: #ffffff;
+    position: relative;
+}
+
+.chatBg .chat_content .received a {
+    color: rgba(0, 0, 0, 0.41);
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.chatBg .chat_content .received .user {
+    position: relative;
+    color: #01a3a7;
+    font-weight: bold;
+}
+
+.chatBg .chat_content .sent a {
+    color: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.chatBg .chat_content .sent .user {
+    visibility: hidden;
+}
+
+.chatBg .writing {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.chatBg .writing .input {
+    position: relative;
+    background: url("../images/trogj_03chat_msgField.png") no-repeat center;
+    background-size: cover;
+    margin: 2%;
+    text-align: left;
+    width: 82%;
+    height: 46px;
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+}
+
+.chatBg .writing .input #file_send {
+    background: url("../images/trogj_03chat_icn_add.png") no-repeat center;
+    background-size: contain;
+    width: 10%;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.chatBg .writing .input #file_send:active {
+    background: url("../images/trogj_03chat_btn_attach_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 10%;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.chatBg .writing input {
+    width: 100% !important;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: left;
+    padding-left: 7% !important;
+    background: none;
+    margin: 0 !important;
+}
+
+.chatBg .writing [name='text_chatting'] {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.chatBg .writing #send {
+    background: url("../images/trogj_03chat_btn_send_normal.png") no-repeat center;
+    background-size: contain;
+    min-height: 46px;
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.chatBg .writing #send:hover {
+    background: url("../images/trogj_03chat_btn_send_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.chatBg .writing #send:active {
+    background: url("../images/trogj_03chat_btn_send_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+/*right side*/
+.infoBg {
+    background: url("../images/trogj_04info_bg.png") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.infoBg .contact_profile {
+    background: url("../images/trogj_04info_base.png") no-repeat center;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    padding: 22% 0;
+}
+
+.contact_profile1 {
+    background: url("../images/trogj_02db_tut_icn_info.png") no-repeat center;
+    background-size: contain;
+    height: 460px;
+    width: 86%;
+    padding: 22% 0;
+    margin-left: 7%;
+    margin-top: -20%;
+}
+
+.help_contact_profile1 {
+    position: absolute;
+    left: 0;
+    height: 460px;
+    width: 86%;
+    padding-top: 72%;
+    padding-left: 23%;
+    margin-left: -62%;
+
+}
+
+.help_contact_profile11 {
+    position: relative;
+    background: url("../images/trogj_02db_tut_tooltip_short1.png") no-repeat center;
+    background-size: contain;
+    height: 46px;
+    width: 100%;
+
+}
+
+.help_contact_profile12 {
+    width: 100%;
+    position: relative;
+    background: url("../images/trogj_02db_tut_tooltip_short1.png") no-repeat center;
+    background-size: contain;
+    height: 46px;
+    margin: 0;
+}
+
+.help_contact_profile13 {
+    position: relative;
+    background: url("../images/trogj_02db_tut_tooltip_medium1.png") no-repeat center;
+    background-size: contain;
+    margin-top: 25%;
+    height: 46px;
+    width: 256px;
+}
+
+.infoBg .contact_profile img {
+    margin: -40% auto 0;
+    width: 40%;
+    border-radius: 50%;
+}
+
+.infoBg .contact_profile1 img {
+    margin: -40% auto 0;
+    width: 100%;
+}
+
+@media (min-width: 991px) and (max-width: 1100px) {
+    .infoBg .contact_profile img {
+        margin: -20% auto 0 !important;
+    }
+
+    .infoBg .contact_profile #new_voicecall {
+        width: 70% !important;
+        margin: -10px auto !important;
+    }
+
+    .infoBg .contact_profile #new_videocall {
+        width: 70% !important;
+        margin: -10px auto !important;
+    }
+
+    .infoBg .contact_profile #addToGroup {
+        width: 70% !important;
+        margin: -10px auto !important;
+    }
+
+    .infoBg .contact_profile #removeFromContactList {
+        width: 70% !important;
+        margin: -10px auto !important;
+    }
+
+    .infoBg .contact_profile #addMember {
+        width: 70% !important;
+        margin: -10px auto !important;
+    }
+
+    .infoBg .contact_profile #leftGroup {
+        width: 70% !important;
+        margin: -10px auto !important;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .infoBg .contact_profile img {
+        margin: -25% auto 0 !important;
+    }
+
+    .infoBg .contact_profile #new_voicecall {
+        width: 70% !important;
+        margin: -5px auto !important;
+    }
+
+    .infoBg .contact_profile #new_videocall {
+        width: 70% !important;
+        margin: -5px auto !important;
+    }
+
+    .infoBg .contact_profile #addToGroup {
+        width: 70% !important;
+        margin: -5px auto !important;
+    }
+
+    .infoBg .contact_profile #removeFromContactList {
+        width: 70% !important;
+        margin: -5px auto !important;
+    }
+
+    .infoBg .contact_profile #addMember {
+        width: 70% !important;
+        margin: -5px auto !important;
+    }
+
+    .infoBg .contact_profile #leftGroup {
+        width: 70% !important;
+        margin: -5px auto !important;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+    .infoBg .contact_profile img {
+        margin: -20% auto 0 !important;
+    }
+
+    .infoBg .contact_profile #new_voicecall {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+
+    .infoBg .contact_profile #new_videocall {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+
+    .infoBg .contact_profile #addToGroup {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+
+    .infoBg .contact_profile #removeFromContactList {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+
+    .infoBg .contact_profile #addMember {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+
+    .infoBg .contact_profile #leftGroup {
+        width: 70% !important;
+        margin: 0 auto !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .infoBg .contact_profile img {
+        margin: -32% auto 0 !important;
+        width: 20% !important;
+    }
+}
+
+.infoBg .contact_profile #new_voicecall {
+    background: url("../images/trogj_04info_btn_call_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    margin: 2% auto;
+}
+
+.infoBg .contact_profile #new_voicecall:hover {
+    background: url("../images/trogj_04info_btn_call_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #new_voicecall:active {
+    background: url("../images/trogj_04info_btn_call_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #new_videocall {
+    background: url("../images/trogj_04info_btn_vid_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    margin: 2% auto;
+}
+
+.infoBg .contact_profile #new_videocall:hover {
+    background: url("../images/trogj_04info_btn_vid_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #new_videocall:active {
+    background: url("../images/trogj_04info_btn_vid_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #addToGroup {
+    background: url("../images/trogj_04info_btn_invite_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    margin: 2% auto;
+}
+
+.infoBg .contact_profile #addToGroup:hover {
+    background: url("../images/trogj_04info_btn_invite_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #addToGroup:active {
+    background: url("../images/trogj_04info_btn_invite_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #removeFromContactList {
+    background: url("../images/trogj_04info_btn_quit_1to1_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    margin: 2% auto;
+}
+
+.infoBg .contact_profile #removeFromContactList:hover {
+    background: url("../images/trogj_04info_btn_quit_1to1_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #removeFromContactList:active {
+    background: url("../images/trogj_04info_btn_quit_1to1_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #addMember {
+    background: url("../images/trogj_04info_btn_add_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    margin: 2% auto;
+}
+
+.infoBg .contact_profile #addMember:hover {
+    background: url("../images/trogj_04info_btn_add_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #addMember:active {
+    background: url("../images/trogj_04info_btn_add_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #leftGroup {
+    background: url("../images/trogj_04info_btn_quit_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    margin: 2% auto;
+}
+
+.infoBg .contact_profile #leftGroup:hover {
+    background: url("../images/trogj_04info_btn_quit_hover.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile #leftGroup:active {
+    background: url("../images/trogj_04info_btn_quit_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.infoBg .contact_profile .userid {
+    color: #2cb3a2;
+    font-size: 20px;
+}
+
+.infoBg .contact_profile .detail_content {
+    font-weight: bold;
+}
+
+.infoBg .logo {
+    position: absolute;
+    bottom: 0;
+    margin: 0 60px;
+}
+
+@media (max-width: 992px) {
+    .infoBg .logo {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.infoBg .logo img {
+    margin: auto;
+}
+
+.infoBg .logo p {
+    color: #2cb3a2;
+    margin: 10px;
+}
+
+.visibleBadge {
+    display: inline !important;
+    background: none;
+}
+
+.activeList {
+    background: url("../images/trogj_02db_highlight.png") no-repeat center;
+    background-size: cover;
+}
+
+.callingScreen {
+    padding-left: 0 !important;
+}
+
+.help_first_button {
+    background: url("../images/trogj_02db_tut_btn_confirm_normal.png") no-repeat center;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+    display: inline-block;
+    margin: auto 0;
+    cursor: pointer;
+}
+
+.help_first_button:hover {
+    background: url("../images/trogj_02db_tut_btn_confirm_hover.png") no-repeat center;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+}
+
+.help_first_button:active {
+    background: url("../images/trogj_02db_tut_btn_confirm_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+}
+
+.help_second_button {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto 0;
+}
+
+.help_second_button:hover {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 50px;
+}
+
+.help_second_button:active {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 50px;
+}
+
+.help_second_button {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 50px;
+    display: inline-block;
+    margin: auto 0;
+}
+
+.help_third_button:hover {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_third_button:active {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_third_button {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto 0;
+}
+
+.help_fifth_button:hover {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_fifth_button:active {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_fifth_button {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    cursor: pointer;
+    height: 40px;
+    display: inline-block;
+    margin: auto 0;
+}
+
+.help_seventh_button {
+    background: url("../images/trogj_02db_tut_btn_prev_pressed.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    margin: auto 0;
+}
+
+.help_fourth_button:hover {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_fourth_button:active {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_fourth_button {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    width: 91px;
+    height: 40px;
+    cursor: pointer;
+    margin: auto 0 auto 10px;
+}
+
+.help_sixth_button:hover {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_sixth_button:active {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    width: 91px;
+    height: 40px;
+}
+
+.help_sixth_button {
+    background: url("../images/trogj_02db_tut_btn_next_normal.png") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    width: 91px;
+    height: 40px;
+    cursor: pointer;
+    margin: auto 0 auto 10px;
+}
+
+.help_eighth_button {
+    background: url("../images/trogj_02db_tut_btn_end_normal.png") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    width: 141px;
+    height: 40px;
+    cursor: pointer;
+    margin: auto 0 auto 10px;
+}
+
+.screen1 {
+    margin-top: 15%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.screen1 u {
+    cursor: pointer;
+}
+
+.screen4 {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.screen4 .screen1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.back_first{
+    cursor: pointer;
+}

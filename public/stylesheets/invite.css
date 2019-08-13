@@ -1,0 +1,112 @@
+.container1{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#group_video{
+    width: 100%;
+    position: relative;
+    height: 78%;
+    overflow: hidden;
+}
+#group_video video{
+    width: 100%;
+}
+#customer{
+    position: absolute;
+    right:0px;
+    left:0px;
+    bottom: 0px;
+    height:22%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background-color: #022346;
+}
+#customers{
+    inline-size: max-content;
+    inline-size: -moz-max-content;
+    inline-size: -webkit-max-content;
+    height: 100%;
+    width: auto;
+}
+#customers .hover_video{
+    position: relative;
+    max-width: 24%;
+    height: 90%;
+    width:24%;
+    margin: 0.5%;
+    float: right;
+}
+
+#customers .hover_video video{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+
+.image{
+    background: url("../images/trogj_03vid_blocked_icn_oops.png") no-repeat center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    width: 60%;
+    height: 50%;
+}
+.small_videos{
+    margin-right: 10px;
+    float: right;
+    width: 300px;
+}
+#blockedUserModal .modal-dialog{
+    width: 400px;
+    height: 500px;
+}
+#blockedUserModal .modal-content{
+    background: url("../images/trogj_03vid_blocked_popup_bg.png") no-repeat center;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+#blockedUserModal .modal-content .modal-body{
+    width:100%;
+    height:100%;
+    padding:10%;
+}
+#blockedUserModal .modal-content img{
+    margin:10% auto;
+}
+#blockedUserModal .modal-content div{
+    color: #ffffff;
+    text-align: center;
+    margin:auto;
+}
+#blockedUserModal .modal-content span{
+    color: #1aa09f;
+}
+#blockedUserModal .quit{
+    background: url("../images/trogj_03vid_btn_quitRoom_normal.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 181px;
+    height: 40px;
+    cursor: pointer;
+}
+#blockedUserModal .quit:hover{
+    background: url("../images/trogj_03vid_btn_quitRoom_hover.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 181px;
+    height: 40px;
+}
+#blockedUserModal .quit:active{
+    background: url("../images/trogj_03vid_btn_quitRoom_pressed.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 181px;
+    height: 40px;
+}

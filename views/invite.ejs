@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/invite.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//media.twiliocdn.com/sdk/js/video/releases/2.0.0-beta2/twilio-video.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/invite.js"></script>
+    <link href="/images/favicon.ico" rel="icon">
+</head>
+<body style="padding: 0px; color: #fff;">
+<input type="hidden" name="channel" value=<%= sendChannel%> >
+<div class="container1">
+    <div class="whole" id="group_video"></div>
+    <div class="left_top">
+        <div style="position: absolute;top: 20px; right: 20px">Group Video Call</div>
+        <div class="change">
+            <div id="video"></div>
+            <div id="mic"></div>
+        </div>
+    </div>
+    <div class="right_top">
+        <span style="position: absolute; top: 20px;left: 20px;">Now Speaking</span>
+        <div id="caller"></div>
+    </div>
+    <div  id="time" style="position: absolute; top: 50px; right: 20px;"></div>
+    <div id="customer" class="form-inline">
+        <div id="customers">
+            <div class="hover_video" id="group_self_video"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="blockedUserModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <br>
+                <div>Well, this is awkward...</div>
+                <div class="image"></div>
+                <div>But, you've been blocked</div>
+                <br>
+                <div>by <span>Moderator</span></div>
+                <br>
+                <div class="quit"></div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

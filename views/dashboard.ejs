@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<% include ./include/asset.ejs %>
+<body style="overflow: hidden;">
+<% include ./include/dashboardAsset.ejs %>
+<!--<div class="container">-->
+<input type="hidden" name="userid" value=<%= id %>>
+<div class="nav">
+    <ul class="pointer1">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="calls">
+        <li class="db"><a>3</a></li>
+        <li class="contact"></li>
+        <li class="group"></li>
+    </ul>
+    <ul class="pointer2">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <ul class="set">
+        <li class="settings"></li>
+        <li class="help"></li>
+        <li class="help1"></li>
+        <form action="/logout" method="post">
+            <li class="logout"></li>
+        </form>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="screen">
+        <div class="col-sm-3 screen1" style="color: white;" id="screen1">
+            <h1 style="color: white;text-align: center">Welcome!</h1>
+            <h2>Is it your first time using the TROGJ App?</h2>
+            <div class="help_first_button"></div>
+            <h4 style="color: white"><u class="back_first">no,just take me to my dashboard</u></h4>
+        </div>
+        <div class="row screen2" style="display: none">
+            <div class="nav" style="background-color: rgba(0,0,0,0)">
+                <ul class="calls">
+                    <li class="help_db"></li>
+                    <li class="help_contact"></li>
+                    <li class="help_group"></li>
+                </ul>
+                <ul class="help_calls">
+                    <li class="help_db1"><span>Show All Conversations</span></li>
+                    <li class="help_contact1"><span>Show Contacts</span></li>
+                    <li class="help_group1"><span>Only Show Groups</span></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 screen1" style="color: white;">
+                <h1 style="color: white;text-align: center">1. Main Navigation</h1>
+                <h3>You can find three buttons on the left navigation bar.</h3>
+                <h3>A button to display all conversations, a button to display the contact list and a button to display the available groups.</h3>
+                <div class="help_second_button"></div>
+                <h4 style="color: white"><u class="back_first" style="cursor:pointer;">Skip Tutorial</u></h4>
+            </div>
+        </div>
+
+        <div class="row screen3" style="display: none">
+            <div class="nav" style="background-color: rgba(0,0,0,0)">
+                <ul class="set">
+                    <li class="help_settings"></li>
+                    <li class="help_help111"></li>
+                    <li class="help_help"></li>
+                    <li></li>
+                </ul>
+                <ul class="help_set">
+                    <li class="help_settings1"><span>Settings</span></li>
+                    <li class="help_help222"><span>Send a SMS</span></li>
+                    <li class="help_help1"><span>Help</span></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 screen1" style="color: white;">
+                <h1 style="color: white;text-align: center">2. Settings & Help</h1>
+                <h3>You can find the settings button, the help button and the Send a SMS to Support button at the bottom of the left navigation bar.</h3>
+                <div><div class="help_third_button"></div><div class="help_fourth_button"></div></div>
+                <h4 style="color: white"><u class="back_first">Skip Tutorial</u></h4>
+            </div>
+        </div>
+        <div class="row screen4" style="display: none">
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4"></div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin: 0!important;color: white;position: relative;height: 100vh">
+                <div style="position: absolute;top: 40%;left: 50%; transform: translate(-50%, -50%); width: 100%; text-align: center">
+                    <h1 style="color: white;text-align: center">3. Information</h1>
+                    <h3>You can find information about the selected user or group on the right side of the user interface.</h3>
+                    <div><div class="help_fifth_button"></div><div class="help_sixth_button"></div></div>
+                    <h4 style="color: white"><u class="back_first" style="cursor:pointer;">Skip Tutorial</u></h4>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" style="margin: 0!important;height: 100%;padding: 0;">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 "  style="position: relative;height: 100%;text-align: center;z-index: 100;">
+                    <div style="position: absolute;-webkit-transform: translateY(-50%);-moz-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);transform: translateY(-50%);top: 350px;">
+                        <div class="help_contact_profile11" ><span>Make Voice Call</span></div>
+                        <div class="help_contact_profile12"><span>Make Video Call</span></div>
+                        <div class="help_contact_profile13"><span>Add user into group</span></div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 infoBg">
+                    <div style="margin: 30% 0 0;">
+                        <div class="contact_profile1"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row screen5" style="display: none">
+            <div class="col-sm-4 screen1" style="color: white;">
+                <h1 style="color: white;text-align: center">That's all!</h1>
+                <h3>Please click on the Help button to restart the ‘Tutorial’ or click on ‘Send an SMS to Support’ for any further assistance.</h3>
+                <div>
+                    <div class="help_seventh_button"></div>
+                    <div class="help_eighth_button"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 info">
+        <p>Dashboard</p>
+        <ul></ul>
+    </div>
+    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 chatBg">
+        <div class="chat_content"></div>
+        <div class="writing">
+
+            <input name="file_send" type="file" id="file_choose" style="display: none">
+            <form action="" name="text_chatting">
+                <div class="input">
+                    <input name="new_chat" autocomplete="off" type="text" placeholder="Type a message"
+                           spellcheck="true">
+                    <div id="file_send"></div>
+                </div>
+                <div id="send"></div>
+            </form>
+
+        </div>
+        <div class="voice_call_monitor">
+            <div class="adjustment col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <span>Voice Call</span><br>
+                <div class="change">
+                    <div class="full_screen"></div>
+                    <div class="default_screen"></div>
+                    <div class="mic"></div>
+                </div>
+            </div>
+            <div class="calling  col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="img-responsive" src="/images/trogj_03call_icn_speaker.png">
+            </div>
+            <div class="time_end col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <span id="time1"></span><br>
+                <div id="accept_voice_call" class="accept_voice_call"></div>
+                <div id="refuse_voice_call" class="refuse_voice_call"></div>
+                <div id="end_voice_call" class="end_voice_call"></div>
+            </div>
+        </div>
+        <div class="group_voice_call_monitor">
+            <div class="adjustment col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <span>Group Voice Call</span><br>
+                <div class="current_callers">
+                </div>
+            </div>
+            <div class="calling  col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <img class="img-responsive" src="./images/trogj_03call_icn_speaker.png">
+            </div>
+            <div class="time_end col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                <span id="time2"></span><br>
+                <div id="end_group_voice_call" class="end_group_voice_call"></div>
+                <div id="accept_group_voice_call" class="accept_group_voice_call"></div>
+                <div id="refuse_group_voice_call" class="refuse_group_voice_call"></div>
+                <div class="change">
+                    <div class="full_screen"></div>
+                    <div class="default_screen"></div>
+                    <div class="mic"></div>
+                </div>
+            </div>
+        </div>
+        <div class="video_call_monitor">
+            <div class="whole" id="remote_video" ></div>
+            <div class="left_top">
+                <div>Video Call</div>
+                <div class="change">
+                    <div class="full_screen"></div>
+                    <div class="default_screen"></div>
+                    <div class="screen_sharing"></div>
+                    <div class="mic"></div>
+                </div>
+            </div>
+            <div class="right_top">
+                <span>Now Speaking</span>
+                <div id="caller"></div>
+            </div>
+            <div class="waiting_screen">
+                Powered by<br>
+                <img class="img-responsive logo_waiting" src="./images/trogj_caw-logo-regular.png"><br>
+                <img class="img-responsive loading" src="./images/waiting-icon.gif"><br>
+                Connecting...
+            </div>
+            <div class="right_bottom">
+                <div class="self_video" id="self_video" ></div>
+                <br>
+                <div class="time" id="time3"></div>
+                <div id="end_video_call"></div>
+                <div id="refuse_video_call"></div>
+                <div id="accept_video_call"></div>
+            </div>
+
+        </div>
+        <div class="group_video_call_monitor">
+            <div class="whole" id="group_video" ></div>
+            <div class="left_top">
+                <div>Group Video Call</div>
+                <div class="change">
+                    <div class="full_screen"></div>
+                    <div class="default_screen"></div>
+                    <div class="screen_sharing"></div>
+                    <div class="mic"></div>
+                </div>
+            </div>
+            <div class="right_top">
+                <span>Now Speaking</span>
+                <div id="caller"></div>
+            </div>
+            <div class="middle">
+                <div id="invite_popup">
+                    <div>Invite new guest to join this room from the following link:</div>
+                    <input type="text" name="invite_url" id="invite_url" autocomplete="off">
+                    <div class="copy_url" onclick="myFunction()"></div>
+                </div>
+                <div id="invite"></div>
+            </div>
+            <div id="customer" class="form-inline">
+                <div id="customers">
+                    <div class="hover_video" id="group_self_video"></div>
+                </div>
+            </div>
+            <div class="waiting_screen">
+                Powered by<br>
+                <img class="img-responsive logo_waiting" src="./images/trogj_caw-logo-regular.png"><br>
+                <img class="img-responsive loading" src="./images/waiting-icon.gif"><br>
+                Connecting...
+            </div>
+            <div class="right_bottom">
+                <div class="time" id="time"></div>
+                <div id="end_group_video_call"></div>
+                <div id="accept_group_video_call"></div>
+                <div id="refuse_group_video_call"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12 infoBg">
+        <div class="logo">
+            <img class="img-responsive" src="./images/trogj_04info_logo.png">
+            <p>Version 1.1</p>
+        </div>
+        <div style="margin: 30% 0 0;">
+            <div class="contact_profile"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- The Modal -->
+<div class="modal fade" id="contact_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button disabled="disabled" type="button" id="new_chat" class="btn btn-success">Start Chat</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="setting_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Change My Password</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group  has-success">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input class="form-control" autocomplete="off" type="password" name="old" placeholder="Old Password"
+                           required><br>
+                </div>
+                <div class="input-group  has-success">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input class="form-control" autocomplete="off" type="password" name="new" placeholder="New Password"
+                           required><br>
+                </div>
+                <div class="input-group  has-success">
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input class="form-control" autocomplete="off" type="password" name="confirm"
+                           placeholder="Confirm Password" required><br>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="updatePwd" class="btn btn-success">Update</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="help_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Submit Issues to Administrator</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <textarea></textarea>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="submithelp" class="btn btn-success">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="addToGroup_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Please Select Where to Add This User</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button disabled="disabled" type="button" id="add_new_member" class="btn btn-success">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="addMember_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Please Select Users to Add to Group</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button disabled="disabled" type="button" id="add" class="btn btn-success">Add</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="leftGroup_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Please Confirm</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div>Are you sure you want to leave this group?</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="leave" class="btn btn-success">Leave</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="removeFromContactList_modal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Please Confirm</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div>Are you sure you want to remove this user from your contact?</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="remove" class="btn btn-success">Remove</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="sharedScreenModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div id="sharing_video"></div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="blockUserModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <input name="user_id" type="hidden">
+                <img src="./images/trogj_03vid_blocked_icn_oops.png"><br>
+                <div>Are you sure<br>want to kick <span></span><br>out of the room?</div>
+                <br>
+                <div class="sure"></div>
+                <br>
+                <div class="close1"><u>cancel</u></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="blockedUserModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body">
+                <br>
+                <div>Well, this is awkward...</div>
+                <img src="./images/trogj_03vid_blocked_icn_oops.png"><br>
+                <div>But, you've been blocked</div>
+                <br>
+                <div>by <span>Moderator</span></div>
+                <br>
+                <div class="quit"></div>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        var copyText = document.getElementById("invite_url");
+        copyText.select();
+        document.execCommand("copy");
+    }
+    //    function sendFile1() {
+    //         $("#file_form").submit();
+    ////        var formData = new FormData();
+    ////        console.log("form data>>>>>>>>>>>>>>", $('#file_choose')[0].files[0]);
+    ////        formData.append('file', $('#file_choose')[0].files[0]);
+    ////        //formData.append('filename', $('#file_choose')[0].files.name);
+    ////        console.log("form data>>>>>>>>>>>>>>", formData);
+    ////        var request = new XMLHttpRequest();
+    ////        request.open("POST", "/api/fileTransfer/");
+    ////        request.send(formData);
+    ////        $.post('/api/fileTransfer/',{
+    ////            body:JSON.stringify( $('#file_choose')[0].files[0])
+    ////        }, function (data, state) {
+    ////            console.log(">>>>>>>>>>>>>>>>>>>>>>>>")
+    ////        });
+    //    }
+</script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+/*Creating or Adding group and members*/
+
+.modal-header h4{
+    margin: 0 20px;
+}
+.modal-body{
+    padding:0;
+    overflow: auto;
+    max-height:500px;
+}
+.modal-header .close {
+    margin-top: -40px;
+}
+.modal .modal-title{
+    font-size: 30px;
+    color: #22a1a0;
+    font-weight: bold;
+}
+/*///////////////////////////////////////////////*/
+#contact_modal .modal-dialog{
+    margin:10% auto;
+}
+#contact_modal .modal-header{
+    border-bottom: 0!important;
+}
+#contact_modal .modal-body ul{
+    padding:0 30px;
+    margin: 0;
+}
+#contact_modal .modal-body li{
+    padding:10px 40px!important;
+    cursor: pointer;
+    position: relative;
+}
+
+#contact_modal .modal-body li span{
+    margin:0 20px;
+}
+
+#contact_modal .modal-body li i{
+    position: absolute;
+    right:40px;
+    top: 18px;
+}
+.activeList{
+    background:url("../images/trogj_02db_highlight.png") no-repeat center;
+    background-size:cover;
+}
+#contact_modal input[type='checkbox']{
+    display: inline-block;
+    margin: 20px;
+}
+/*/////////////////////////////////////////////////////*/
+
+#setting_modal .modal-body {
+    padding:10px;
+}
+#setting_modal .modal-body div{
+    margin:10px 50px;
+}
+#setting_modal .modal-body input{
+    outline: #3c763d solid 1px;
+}
+#setting_modal .modal-body input:focus{
+    outline-style: none;
+}
+/*////////////////////////////////////////////////*/
+#help_modal .modal-body textarea{
+    margin: 0;
+    padding:2%;
+    font-size: 20px;
+    max-width: 100%;
+    overflow: auto;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+}
+/*///////////////////////////////////////////////*/
+#addToGroup_modal .modal-dialog{
+    margin:10% auto;
+}
+#addToGroup_modal .modal-header{
+    border-bottom: 0!important;
+}
+
+#addToGroup_modal .modal-body ul{
+    padding:0 30px;
+    margin: 0;
+}
+#addToGroup_modal .modal-body li{
+    padding:10px 40px!important;
+    cursor: pointer;
+    position: relative;
+}
+
+#addToGroup_modal .modal-body li span{
+    margin:0 20px;
+}
+
+#addToGroup_modal .modal-body li i{
+    position: absolute;
+    right:40px;
+    top: 18px;
+}
+
+#addMember_modal .modal-dialog{
+    margin:10% auto;
+}
+#addMember_modal .modal-header{
+    border-bottom: 0!important;
+}
+
+#addMember_modal .modal-body ul{
+    padding:0 30px;
+    margin: 0;
+}
+#addMember_modal .modal-body li{
+    padding:10px 40px!important;
+    cursor: pointer;
+    position: relative;
+}
+
+#addMember_modal .modal-body li span{
+    margin:0 20px;
+}
+
+#addMember_modal .modal-body li i{
+    position: absolute;
+    right:40px;
+    top: 18px;
+}
+
+#addMember_modal input[type='checkbox']{
+    display: inline-block;
+    margin: 20px;
+}
+#leftGroup_modal .modal-title {
+    font-size: 20px;
+}
+#leftGroup_modal .modal-body{
+    padding: 20px;
+}
+#leftGroup_modal .modal-dialog{
+    margin:10% auto;
+}
+#leftGroup_modal .modal-header{
+    border-bottom: 0!important;
+}
+
+#removeFromContactList_modal .modal-title {
+    font-size: 20px;
+}
+#removeFromContactList_modal .modal-body{
+    padding: 20px;
+}
+#removeFromContactList_modal .modal-dialog{
+    margin:10% auto;
+}
+#removeFromContactList_modal .modal-header{
+    border-bottom: 0!important;
+}
+#blockUserModal .modal-dialog,#blockedUserModal .modal-dialog{
+    width: 400px;
+    height: 500px;
+}
+#blockUserModal .modal-content,#blockedUserModal .modal-content{
+    background: url("../images/trogj_03vid_blocked_popup_bg.png") no-repeat center;
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+#blockUserModal .modal-content .modal-body,#blockedUserModal .modal-content .modal-body{
+    width:100%;
+    height:100%;
+    padding:10%;
+}
+#blockUserModal .modal-content img,#blockedUserModal .modal-content img{
+    margin:10% auto;
+}
+#blockUserModal .modal-content div,#blockedUserModal .modal-content div{
+    color: #ffffff;
+    text-align: center;
+    margin:auto;
+}
+#blockUserModal .modal-content span,#blockedUserModal .modal-content span{
+    color: #1aa09f;
+}
+#blockUserModal .sure{
+    background: url("../images/trogj_03vid_block_btn_sure_normal.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 121px;
+    height: 40px;
+    cursor: pointer;
+}
+#blockUserModal .sure:hover{
+    background: url("../images/trogj_03vid_block_btn_sure_hover.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 121px;
+    height: 40px;
+}
+#blockUserModal .sure:active{
+    background: url("../images/trogj_03vid_block_btn_sure_pressed.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 121px;
+    height: 40px;
+}
+#blockUserModal .modal-content .close1{
+    display: inline;
+    text-align: center;
+    color: #1aa09f;
+    cursor: pointer;
+}
+#blockUserModal .modal-content .close1:hover{
+    display: inline;
+    text-align: center;
+    color: #21c8c7;
+    cursor: pointer;
+}
+#blockUserModal .modal-content .close1:active{
+    display: inline;
+    text-align: center;
+    color: #0f5d5c;
+    cursor: pointer;
+}
+#blockedUserModal .quit{
+    background: url("../images/trogj_03vid_btn_quitRoom_normal.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 181px;
+    height: 40px;
+    cursor: pointer;
+}
+#blockedUserModal .quit:hover{
+    background: url("../images/trogj_03vid_btn_quitRoom_hover.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 181px;
+    height: 40px;
+}
+#blockedUserModal .quit:active{
+    background: url("../images/trogj_03vid_btn_quitRoom_pressed.png") no-repeat center;
+    -webkit-background-size:contain;
+    background-size:contain;
+    width: 181px;
+    height: 40px;
+}

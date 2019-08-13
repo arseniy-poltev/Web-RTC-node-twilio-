@@ -1,0 +1,1244 @@
+
+/*// 1:1 voice calling parts*/
+.chatBg .voice_call_monitor {
+    background-color: #2ca2a5;
+    height: 300px ;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+}
+.mobileRemote{
+    width:100%!important;
+    height:auto!important
+}
+
+.chatBg .voice_call_monitor .adjustment .change{
+    margin: 30% 0;
+    width:100%;
+}
+/*.chatBg .group_voice_call_monitor .time_end .change div{*/
+/*display: inline-block;*/
+/*}*/
+.chatBg .voice_call_monitor div span{
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 40%;
+    text-align: center;
+}
+.chatBg .voice_call_monitor .calling{
+    height:100%;
+}
+/*@media (max-width: 992px) {*/
+    /*.chatBg .group_voice_call_monitor .calling img{*/
+        /*width:100%;*/
+        /*margin-top:80%;*/
+    /*}*/
+/*}*/
+@media (max-width: 992px) {
+    .chatBg .voice_call_monitor .calling img{
+        width: 50% !important;
+        margin:auto;
+    }
+    .chatBg .voice_call_monitor .time_end {
+        height: 20%;
+        padding: 5% ;
+    }
+    .chatBg .voice_call_monitor .adjustment{
+        height: 10%;
+        padding: 5%;
+    }
+    .chatBg .voice_call_monitor .adjustment span{
+        font-size: 16px;
+    }
+    .chatBg .voice_call_monitor .calling{
+        height:70%!important;
+        width:100%;
+        padding:10%;
+    }
+    .chatBg .group_voice_call_monitor .calling img{
+        width: 50% !important;
+        margin:auto;
+    }
+    .chatBg .group_voice_call_monitor .time_end {
+        height: 20%;
+        padding: 5% ;
+    }
+    .chatBg .group_voice_call_monitor .adjustment{
+        height: 10%;
+        padding: 5%;
+    }
+    .chatBg .group_voice_call_monitor .adjustment span{
+        font-size: 16px;
+    }
+    .chatBg .group_voice_call_monitor .calling{
+        height:70%!important;
+        width:100%;
+        padding:10%;
+    }
+}
+@media (min-width: 992px) {
+    .chatBg .voice_call_monitor .time_end {
+        height: 100%;
+        padding: 10% 0 0;
+    }
+    .chatBg .voice_call_monitor .adjustment{
+        height: 100%;
+        padding: 10% 0 0 15%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+    .chatBg .voice_call_monitor .calling img{
+        width:100%;
+        margin-top:30%;
+    }
+    .chatBg .voice_call_monitor .adjustment span{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1101px) and (max-width: 1400px) {
+    .chatBg .voice_call_monitor .calling img{
+        width:100%;
+        margin-top:20%;
+    }
+    .chatBg .voice_call_monitor .adjustment span{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1550px) {
+    .chatBg .voice_call_monitor .calling img{
+        width:100%;
+        margin-top:20%;
+    }
+    .chatBg .voice_call_monitor .adjustment span{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1551px) and (max-width: 1900px){
+    .chatBg .voice_call_monitor .calling img{
+        width:100%;
+        margin-top:10%;
+    }
+    .chatBg .voice_call_monitor .adjustment span{
+        font-size: 24px;
+    }
+}
+@media (min-width: 1901px){
+    .chatBg .voice_call_monitor .calling img{
+        width:100%;
+        margin-top:2%;
+    }
+    .chatBg .voice_call_monitor .adjustment span{
+        font-size: 26px;
+    }
+}
+.chatBg .voice_call_monitor .calling img{
+    width:100%;
+}
+
+.chatBg .voice_call_monitor .time_end .end_voice_call{
+    background: url("../images/trogj_03call_btn_endCall_normal.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto 0;
+    width:100%;
+    height:40px;
+}
+.chatBg .voice_call_monitor  .time_end .end_voice_call:hover{
+    background: url("../images/trogj_03call_btn_endCall_hover.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor  .time_end .end_voice_call:active{
+    background: url("../images/trogj_03call_btn_endCall_pressed.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor .time_end .accept_voice_call{
+    background: url("../images/trogj_03vid_invite_btn_accept_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:10% 5%;
+    width: 40%;
+    height:40px;
+    /*display: inline-block!important;*/
+}
+.chatBg .voice_call_monitor  .time_end .accept_voice_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_accept_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor  .time_end .accept_voice_call:active{
+    background: url("../images/trogj_03vid_invite_btn_accept_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor .time_end .refuse_voice_call{
+    background: url("../images/trogj_03vid_invite_btn_refuse_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:10%  5%;
+    width:40%;
+    height:40px;
+    float: right;
+}
+.chatBg .voice_call_monitor  .time_end .refuse_voice_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_refuse_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor  .time_end .refuse_voice_call:active{
+    background: url("../images/trogj_03vid_invite_btn_refuse_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+/*// group voice calling parts*/
+.chatBg .group_voice_call_monitor {
+    background-color: #2ca2a5;
+    height: 300px ;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+}
+
+
+.chatBg .group_voice_call_monitor .adjustment .change{
+    margin: 30% 40% 0;
+    width:100%;
+}
+/*.chatBg .group_voice_call_monitor .time_end .change div{*/
+/*display: inline-block;*/
+/*}*/
+.chatBg .group_voice_call_monitor div span{
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 40%;
+    text-align: center;
+}
+.chatBg .group_voice_call_monitor .calling{
+    height:100%;
+}
+/*@media (max-width: 992px) {*/
+/*.chatBg .group_voice_call_monitor .calling img{*/
+/*width:100%;*/
+/*margin-top:80%;*/
+/*}*/
+/*}*/
+
+@media (min-width: 992px) {
+    .chatBg .group_voice_call_monitor .time_end {
+        height: 100%;
+        padding: 10% 0 0;
+    }
+    .chatBg .group_voice_call_monitor .adjustment{
+        height: 100%;
+        padding: 10% 0 0 15%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1100px) {
+    .chatBg .group_voice_call_monitor .calling img{
+        width:100%;
+        margin-top:30%;
+    }
+    .chatBg .group_voice_call_monitor .adjustment span{
+        font-size: 16px;
+    }
+}
+@media (min-width: 1101px) and (max-width: 1400px) {
+    .chatBg .group_voice_call_monitor .calling img{
+        width:100%;
+        margin-top:20%;
+    }
+    .chatBg .group_voice_call_monitor .adjustment span{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1401px) and (max-width: 1550px) {
+    .chatBg .group_voice_call_monitor .calling img{
+        width:100%;
+        margin-top:20%;
+    }
+    .chatBg .group_voice_call_monitor .adjustment span{
+        font-size: 20px;
+    }
+}
+@media (min-width: 1551px) and (max-width: 1900px){
+    .chatBg .group_voice_call_monitor .calling img{
+        width:100%;
+        margin-top:10%;
+    }
+    .chatBg .group_voice_call_monitor .adjustment span{
+        font-size: 24px;
+    }
+}
+@media (min-width: 1901px){
+    .chatBg .group_voice_call_monitor .calling img{
+        width:100%;
+        margin-top:2%;
+    }
+    .chatBg .group_voice_call_monitor .adjustment span{
+        font-size: 26px;
+    }
+}
+.chatBg .group_voice_call_monitor .calling img{
+    width:100%;
+}
+
+.chatBg .group_voice_call_monitor .time_end .end_group_voice_call{
+    background: url("../images/trogj_03call_btn_endCall_normal.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto 0;
+    width:100%;
+    height:40px;
+}
+.chatBg .group_voice_call_monitor  .time_end .end_group_voice_call:hover{
+    background: url("../images/trogj_03call_btn_endCall_hover.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_voice_call_monitor  .time_end .end_group_voice_call:active{
+    background: url("../images/trogj_03call_btn_endCall_pressed.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_voice_call_monitor .time_end .accept_group_voice_call{
+    background: url("../images/trogj_03vid_invite_btn_accept_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:10% 5%;
+    width: 40%;
+    height:40px;
+    display: none;
+}
+.chatBg .group_voice_call_monitor  .time_end .accept_group_voice_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_accept_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_voice_call_monitor  .time_end .accept_group_voice_call:active{
+    background: url("../images/trogj_03vid_invite_btn_accept_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_voice_call_monitor .time_end .refuse_group_voice_call{
+    background: url("../images/trogj_03vid_invite_btn_refuse_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:10%  5%;
+    width:40%;
+    height:40px;
+    float: right;
+    display: none;
+}
+.chatBg .group_voice_call_monitor  .time_end .refuse_group_voice_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_refuse_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_voice_call_monitor  .time_end .refuse_group_voice_call:active{
+    background: url("../images/trogj_03vid_invite_btn_refuse_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_voice_call_monitor  .adjustment .current_callers{
+    margin-top: 20px;
+}
+
+/*/// 1:1 video calling */
+.chatBg .video_call_monitor{
+    display: none;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+.chatBg .video_call_monitor .whole{
+    height: 100%;
+}
+.chatBg .video_call_monitor .mask{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(2,35, 78, 0.5), rgba(255, 255, 255, 0) 30%,rgba(255, 255, 255, 0) 70%, rgba(2, 35, 78, 0.7));
+}
+.chatBg .video_call_monitor .left_top{
+    position: absolute;
+    left:1%;
+    top:1%;
+    color: #ffffff;
+    font-size: 20px;
+}
+.chatBg .video_call_monitor .right_top{
+    position: absolute;
+    right:1%;
+    top:1%;
+    text-align: right;
+}
+.chatBg .video_call_monitor .right_top span{
+    color: #ffffff;
+    font-size: 15px;
+}
+.chatBg .video_call_monitor .right_top #caller{
+    font-size: 30px;
+    color: #20aead;
+}
+.chatBg .video_call_monitor .change{
+    width:20%;
+    margin: auto;
+}
+.chatBg .video_call_monitor .change div{
+    display: inline-block;
+}
+.chatBg .video_call_monitor .right_bottom{
+    position: absolute;
+    right:1%;
+    bottom:2%;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: right;
+    width: 500px;
+}
+.chatBg .video_call_monitor .right_bottom #end_video_call{
+    float: right;
+    display: inline-block;
+    background: url("../images/trogj_04info_btn_endVid_normal_preview.png") no-repeat center;
+    background-size: contain;
+    width: 200px;
+    margin:0;
+    height:40px;
+}
+.chatBg .video_call_monitor .right_bottom #end_video_call:hover{
+    background: url("../images/trogj_04info_btn_endVid_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .video_call_monitor .right_bottom #end_video_call:active{
+    background: url("../images/trogj_04info_btn_endVid_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .video_call_monitor .right_bottom .self_video{
+    display: block;
+    width: 180px;
+    height: 180px;
+    margin: 0 0 0 65%;
+}
+
+.chatBg .video_call_monitor .change{
+    margin:auto;
+    width: 100px;
+}
+.chatBg .video_call_monitor .right_bottom #accept_video_call{
+    background: url("../images/trogj_03vid_invite_btn_accept_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:1%;
+    height:40px;
+    width: 30%;
+    float: right;
+    display: none;
+
+}
+.chatBg .video_call_monitor  .right_bottom #accept_video_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_accept_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .video_call_monitor  .right_bottom #accept_video_call:active{
+    background: url("../images/trogj_03vid_invite_btn_accept_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .video_call_monitor .right_bottom #refuse_video_call{
+    background: url("../images/trogj_03vid_invite_btn_refuse_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:1%;
+    width: 30%;
+    height:40px;
+    float: right ;
+    display: none;
+}
+.chatBg .video_call_monitor  .right_bottom #refuse_video_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_refuse_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .video_call_monitor  .right_bottom #refuse_video_call:active{
+    background: url("../images/trogj_03vid_invite_btn_refuse_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+
+/*/// group video calling */
+.chatBg .group_video_call_monitor{
+    display: none;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.chatBg .group_video_call_monitor .whole{
+    height: 100%;
+}
+.chatBg .group_video_call_monitor .mask{
+    position: absolute;
+    top:0px;
+    left:0px;
+    overflow: hidden;
+    width:100%;
+    height:100%;
+    background: linear-gradient(rgba(2,35, 78, 0.5), rgba(255, 255, 255, 0) 30%,rgba(255, 255, 255, 0) 70%, rgba(2, 35, 78, 0.7));
+}
+
+.chatBg .group_video_call_monitor .left_top{
+    position: absolute;
+    left:2%;
+    top:1%;
+    color: #fff;
+    font-size: 25px;
+}
+.chatBg .group_video_call_monitor .change{
+    display: block;
+    width: 100px;
+    margin:auto;
+}
+.chatBg .group_video_call_monitor .change div{
+    display: inline-block;
+    margin: 10px auto;
+}
+.chatBg .group_video_call_monitor .right_top{
+    position: absolute;
+    right:2%;
+    top:1%;
+    text-align: right;
+}
+.chatBg .group_video_call_monitor .right_top span{
+    color: #ffffff;
+    font-size: 15px;
+}
+.chatBg .group_video_call_monitor .right_top #caller{
+    font-size: 30px;
+    color: #20aead;
+}
+.chatBg .group_video_call_monitor .right_bottom{
+    position: absolute;
+    right:1%;
+    bottom:24%;
+    color: #ffffff;
+    font-size: 30px;
+    width: 35%;
+    text-align: right;
+}
+.chatBg .group_video_call_monitor .right_bottom #end_group_video_call{
+    background: url("../images/trogj_04info_btn_endVid_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:auto;
+    float: right;
+    height:40px;
+    width: 55%;
+}
+.chatBg .group_video_call_monitor .right_bottom #end_group_video_call:hover{
+    background: url("../images/trogj_04info_btn_endVid_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor .right_bottom #end_group_video_call:active{
+    background: url("../images/trogj_04info_btn_endVid_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor #invite{
+    background: url("../images/trogj_03vid_btn_invite_normal.png") no-repeat center;
+    background-size: contain;
+    height: 40px;
+    width: 50%;
+    display: none;
+    margin: auto;
+}
+
+.chatBg .group_video_call_monitor #invite:hover{
+    background: url("../images/trogj_03vid_btn_invite_hover.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor #invite:active{
+    background: url("../images/trogj_03vid_btn_invite_pressed.png") no-repeat center;
+    background-size: contain;
+}
+
+.chatBg .group_video_call_monitor #customer{
+    position: absolute;
+    right:0;
+    left:0;
+    bottom: 0;
+    height:22%;
+    padding: 10px;
+    overflow-x: auto;
+    background-color: #022346;
+}
+.chatBg .group_video_call_monitor #customers{
+    inline-size: max-content;
+    inline-size: -moz-max-content;
+    inline-size: -webkit-max-content;
+    height: 100%;
+    width: auto;
+}
+
+.hover_video{
+    position: relative;
+    max-width: 24%;
+    height: 90%;
+    width:24%;
+    margin: 0.5%;
+    float: right;
+}
+.hover_video video{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.hover_video .block_user{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    display: none;
+    background: rgba(0,0,0,0.5);
+}
+.hover_video .block_user img{
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.chatBg .group_video_call_monitor .right_bottom #accept_group_video_call{
+    background: url("../images/trogj_03vid_invite_btn_accept_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:0;
+    width: 35%;
+    height:40px;
+    display: none;
+
+}
+.chatBg .group_video_call_monitor  .right_bottom #accept_group_video_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_accept_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor  .right_bottom #accept_group_video_call:active{
+    background: url("../images/trogj_03vid_invite_btn_accept_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor .right_bottom #refuse_group_video_call{
+    background: url("../images/trogj_03vid_invite_btn_refuse_normal_preview.png") no-repeat center;
+    background-size: contain;
+    margin:0;
+    width:35%;
+    height:40px;
+    float: right;
+    display: none;
+}
+.chatBg .group_video_call_monitor  .right_bottom #refuse_group_video_call:hover{
+    background: url("../images/trogj_03vid_invite_btn_refuse_hover_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor   .right_bottom #refuse_group_video_call:active{
+    background: url("../images/trogj_03vid_invite_btn_refuse_pressed_preview.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .group_video_call_monitor  .small_videos{
+    z-index: 900;
+    max-width: 24%;
+    height: 90%;
+    margin: 0.5%;
+    float: right;
+}
+.chatBg .group_video_call_monitor .middle{
+    position: absolute;
+    bottom: 24%;
+    left: 30%;
+    width: 40%;
+}
+
+/*///    adjustments//*/
+.chatBg .full_screen{
+    background: url("../images/trogj_03call_icn_fullscreen_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10% auto;
+}
+.chatBg .full_screen:hover{
+    background: url("../images/trogj_03call_icn_fullscreen_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .full_screen:active{
+    background: url("../images/trogj_03call_icn_fullscreen_pressed.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .default_screen{
+    background: url("../images/trogj_03call_icn_windowed_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10% auto;
+}
+.chatBg .default_screen:hover{
+    background: url("../images/trogj_03call_icn_windowed_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .default_screen:active{
+    background: url("../images/trogj_03call_icn_windowed_pressed.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.chatBg .voice_call_monitor .full_screen{
+    background: url("../images/trogj_03call_icn_fullscreen_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    margin:0;
+    display: inline-block;
+}
+.chatBg .voice_call_monitor .full_screen:hover{
+    background: url("../images/trogj_03call_icn_fullscreen_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor  .full_screen:active{
+    background: url("../images/trogj_03call_icn_fullscreen_pressed.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor .default_screen{
+    background: url("../images/trogj_03call_icn_windowed_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    margin: 0;
+    display: inline-block;
+}
+.chatBg .voice_call_monitor .default_screen:hover{
+    background: url("../images/trogj_03call_icn_windowed_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor .default_screen:active{
+    background: url("../images/trogj_03call_icn_windowed_pressed.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor .screen_sharing{
+    background: url("../images/trogj_03vid_icn_screenshare_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 0;
+}
+.chatBg .voice_call_monitor .screen_sharing:hover{
+    background: url("../images/trogj_03vid_icn_screenshare_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor .screen_sharing:active{
+    background: url("../images/trogj_03vid_icn_screenshare_pressed.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/*.chatBg  #speaker{*/
+    /*background: url("../images/trogj_03call_icn_speaker_normal.png") no-repeat center;*/
+    /*width: 25px;*/
+    /*height:35px;*/
+    /*background-size: contain;*/
+    /*margin: 5px 10px;*/
+/*}*/
+/*.chatBg  #speaker:hover{*/
+    /*background: url("../images/trogj_03call_icn_speaker_hover.png") no-repeat center;*/
+    /*background-size: contain;*/
+    /*cursor: pointer;*/
+/*}*/
+/*.chatBg  #speaker:active{*/
+    /*background: url("../images/trogj_03call_icn_speaker_pressed.png") no-repeat center;*/
+    /*background-size: contain;*/
+/*}*/
+/*.speakerTurnedOff{*/
+    /*background: url("../images/trogj_03call_icn_speaker_active.png") no-repeat center;*/
+    /*background-size: contain;*/
+/*}*/
+
+.chatBg  .video{
+    background: url("../images/trogj_03call_icn_video_normal.png") no-repeat;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10% auto;
+}
+.chatBg  .video:hover{
+    background: url("../images/trogj_03call_icn_video_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg  .video:active{
+    background: url("../images/trogj_03call_icn_video_pressed.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor .video{
+    background: url("../images/trogj_03call_icn_video_normal.png") no-repeat;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 0;
+}
+.chatBg .voice_call_monitor .video:hover{
+    background: url("../images/trogj_03call_icn_video_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor .video:active{
+    background: url("../images/trogj_03call_icn_video_pressed.png") no-repeat center;
+    background-size: contain;
+}
+.videoTurnedOff{
+    background: url("../images/trogj_03call_icn_video_active.png") no-repeat center!important;
+    background-size: contain!important;
+}
+.chatBg  .mic{
+    background: url("../images/trogj_03call_icn_mute_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10% auto;
+}
+.chatBg .mic:hover{
+    background: url("../images/trogj_03call_icn_mute_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg  .mic:active{
+    background: url("../images/trogj_03call_icn_mute_pressed.png") no-repeat center;
+    background-size: contain;
+}
+.chatBg .voice_call_monitor .mic{
+    background: url("../images/trogj_03call_icn_mute_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 0;
+}
+.chatBg .voice_call_monitor .mic:hover{
+    background: url("../images/trogj_03call_icn_mute_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .voice_call_monitor .mic:active{
+    background: url("../images/trogj_03call_icn_mute_pressed.png") no-repeat center;
+    background-size: contain;
+}
+.micTurnedOff{
+    background: url("../images/trogj_03call_icn_mute_active.png") no-repeat center!important;
+    background-size: contain!important;
+}
+@media (max-width: 992px) {
+    .fullMonitor{
+        height: 100% !important;
+    }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+    .fullMonitor{
+        height: 100% !important;
+        padding-top:20%;
+    }
+}
+@media (min-width: 1400px) and (min-height: 800px) {
+    .fullMonitor{
+        height: 100% !important;
+        padding-top:10%;
+    }
+}
+@media (min-width: 1400px) and (max-height: 800px) {
+    .fullMonitor{
+        height: 100% !important;
+        padding-top:5%;
+    }
+}
+@media (min-width: 2000px) and (min-height: 800px) {
+    .fullMonitor{
+        height: 100% !important;
+        padding-top:2%;
+    }
+}
+@media (max-width: 420px) {
+    .fullVideoView{
+        height:100%!important;
+        width:auto!important;
+    }
+}
+@media (min-width: 420px) and (max-width: 992px) and (max-height:800px ){
+    .fullVideoView{
+        width:100%!important;
+        height:auto!important;
+    }
+}
+@media (min-width: 420px) and (max-width: 992px) and (max-height:800px ){
+    .fullVideoView{
+        width:100%!important;
+        height:auto!important;
+    }
+}
+@media (min-width: 992px) {
+    .fullVideoView{
+        width:100%!important;
+        height:auto!important;
+    }
+}
+.fullBg{
+    width:100%;
+    position:absolute;
+}
+#invite_popup {
+    background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+    background-size: contain;
+    display: none;
+    padding: 20% 10%;
+    bottom: 30%;
+    left: 30%;
+    height: 400px;
+}
+@media (min-width: 1400px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 20% 20%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 20% 10%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+}
+@media (min-width: 991px) and (max-width: 1200px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 30% 10%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+}
+@media (min-width: 740px) and (max-width: 991px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 20% 20%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+}
+@media (min-width: 540px) and (max-width: 740px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 30% 10%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+}
+@media (min-width: 450px) and (max-width: 540px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 50% 5% 0 5%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+    #invite_popup div {
+        color: #FFFFFF;
+        font-size: 10px;
+        padding: 0;
+    }
+    #invite_popup input[name='invite_url'] {
+        background: url("../images/trogj_03vid_invite_txtField1_normal.png") no-repeat center;
+        background-size: contain;
+        outline: none;
+        height: 60px;
+        margin: 0!important;
+    }
+    #invite_popup .copy_url {
+        background: url("../images/trogj_03vid_invite_btn_copy_normal.png") no-repeat center;
+        background-size: contain;
+        height: 40px;
+        margin: 10% auto !important;
+    }
+}
+@media (min-width: 300px) and (max-width: 450px) {
+    #invite_popup {
+        background: url("../images/trogj_03vid_invite_popup_bg.png") no-repeat center;
+        background-size: contain;
+        display: none;
+        padding: 60% 5% 0 5%;
+        bottom: 30%;
+        left: 30%;
+        height: 400px;
+    }
+    #invite_popup div {
+        color: #FFFFFF;
+        font-size: 8px;
+        padding: 0;
+    }
+    #invite_popup input[name='invite_url'] {
+        background: url("../images/trogj_03vid_invite_txtField1_normal.png") no-repeat center;
+        background-size: contain;
+        outline: none;
+        height: 60px;
+        margin: 0!important;
+    }
+    #invite_popup .copy_url {
+        background: url("../images/trogj_03vid_invite_btn_copy_normal.png") no-repeat center;
+        background-size: contain;
+        height: 40px;
+        margin: 10% auto !important;
+    }
+}
+#invite_popup *{
+    text-align: center;
+}
+#invite_popup div{
+    color: #FFFFFF;
+    font-size: 14px;
+    padding:5% 0;
+}
+
+/*noinspection ALL*/
+#invite_popup input{
+    color: #20aead;
+    font-size: 14px;
+    width:-webkit-fill-available;;
+}
+#invite_popup .copy_url{
+    background: url("../images/trogj_03vid_invite_btn_copy_normal.png") no-repeat center;
+    background-size: contain;
+    height:40px;
+    margin:20% auto;
+}
+#invite_popup .copy_url:hover{
+    background: url("../images/trogj_03vid_invite_btn_copy_hover.png") no-repeat center;
+    background-size: contain;
+}
+#invite_popup .copy_url:active{
+    background: url("../images/trogj_03vid_invite_btn_copy_pressed.png") no-repeat center;
+    background-size: contain;
+}
+#invite_popup input[name='invite_url']{
+    background: url("../images/trogj_03vid_invite_txtField1_normal.png") no-repeat center;
+    background-size: contain;
+    outline:none;
+    height:60px;
+    margin:10% 0;
+}
+#invite_popup input[name='invite_url']:hover{
+    background: url("../images/trogj_03vid_invite_txtField1_active_preview.png") no-repeat center;
+    background-size: contain;
+    outline:none;
+}
+#invite_popup input[name='invite_url']:focus{
+    background: url("../images/trogj_03vid_invite_txtField1_active.png") no-repeat center;
+    background-size: contain;
+    outline:none;
+}
+#invite_popup input[name='address']{
+    background: url("../images/trogj_03vid_invite_txtField2_normal.png") no-repeat center;
+    background-size: contain;
+    outline:none;
+    height:40px;
+}
+#invite_popup input[name='address']:hover{
+    background: url("../images/trogj_03vid_invite_txtField2_normal_preview.png") no-repeat center;
+    background-size: contain;
+    outline:none;
+}
+#invite_popup input[name='address']:focus{
+    background: url("../images/trogj_03vid_invite_txtField2_active_preview.png") no-repeat center;
+    background-size: contain;
+    outline:none;
+}
+.displayBtn{
+    display: inline-block;
+}
+.waiting_screen{
+    background: #ffffff;
+    height: 100% ;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    padding:20%;
+}
+.logo_waiting{
+    margin:auto;
+}
+.loading{
+    margin:20% auto;
+    width:30%;
+}
+
+/*//screen sharing*/
+.chatBg .screen_sharing{
+    background: url("../images/trogj_03vid_icn_screenshare_normal.png") no-repeat center;
+    width: 28px;
+    height:26px;
+    background-size: contain;
+    display: inline-block;
+    margin: 10% auto;
+}
+.chatBg .screen_sharing:hover{
+    background: url("../images/trogj_03vid_icn_screenshare_hover.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.chatBg .screen_sharing:active{
+    background: url("../images/trogj_03vid_icn_screenshare_pressed.png") no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+.activeScreenSharing{
+    background: url("../images/trogj_03vid_icn_screenshare_active.png") no-repeat center!important;
+    background-size: contain!important;
+    cursor: pointer;
+}
+
+#sharedScreenModal .modal-dialog{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+#sharedScreenModal .modal-dialog .modal-content{
+    width: 100%;
+    height: 100%;
+}
+#sharedScreenModal .modal-dialog .modal-content .modal-body{
+    font-size: 20px;
+    text-align: center;
+}
+#sharedScreenModal .modal-dialog .modal-content .modal-body div{
+    padding:10%;
+}
+#sharedScreenModal .modal-dialog .modal-content .modal-footer{
+    z-index:2000;
+    position: absolute;
+    bottom:5%;
+    right:5%;
+}
+#sharedScreenModal .modal-dialog .modal-content #sharing_video{
+    width:100%;
+    height:100%;
+    z-index:1000;
+    position: absolute;
+    top:0;
+}
+#sharedScreenModal .modal-dialog .modal-content #sharing_video video{
+    width:100%;
+    height:100%;
+    z-index:1000;
+    position: absolute;
+    top:0;
+}
+@media (max-width: 992px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        height:130%;
+    }
+    .chatBg .group_video_call_monitor .whole video{
+        position: relative;
+        height:130%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) and (max-height: 558px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+    .chatBg .group_video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) and (min-height: 558px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        height:130%;
+    }
+    .chatBg .group_video_call_monitor .whole video{
+        position: relative;
+        height:130%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) and (max-height: 800px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+    .chatBg .group_video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1600px) and (min-height: 800px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+    .chatBg .group_video_call_monitor .whole video{
+        position: relative;
+        height:130%;
+    }
+}
+
+@media (min-width: 1600px)  {
+    .chatBg .group_video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1930px) and (min-height: 850px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+}
+@media (min-width: 1600px) and (max-width: 1930px) and (max-height: 850px) {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+}
+@media (min-width: 1930px)  {
+    .chatBg .video_call_monitor .whole video{
+        position: relative;
+        width:130%;
+    }
+}

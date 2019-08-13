@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./include/asset.ejs%>
+</head>
+<body class="start">
+<div class="w-100">
+    <div class="row login" style="margin: 0!important;">
+        <div class="col-lg-4 col-md-3 col-sm-3 col-xs-1"></div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-10">
+            <div class="panel-login">
+                <img class="img-responsive" src="./images/trogj_logo.png">
+                <div>Please Sign In</div>
+                <form name="login-form" action="/confirm" method="post">
+                    <input type="text" autocomplete="off" name="username" placeholder="User ID">
+                    <input type="password" name="password" placeholder="Password">
+                    <div id="signin"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-3 col-xs-1"></div>
+    </div>
+
+</div>
+</body>
+</html>

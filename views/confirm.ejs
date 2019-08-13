@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./include/asset.ejs%>
+</head>
+<body class="start">
+<div class="w-100">
+    <div class="row"  style="margin: 0!important;">
+        <div class="col-lg-4 col-md-3 col-sm-3 col-xs-1"></div>
+        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-10">
+            <div class="login-modal">
+                <form method="get" action="/">
+                    <div class="close"></div>
+                </form>
+                <div class="phone"><img src="./images/trogj_signin_icn_verify.png" class="img-responsive"></div>
+                <div>Verification</div>
+                <form action="/dashboard" method="post" name="otp-form">
+                    <input name="userid" type="hidden" value="<%=id%>">
+                    <input name="otp_value" autocomplete="off" placeholder="Enter Your Security Code">
+                    <div class="otp_confirm"></div>
+                </form>
+                <form action="/" method="get">
+                    <div class="cancel"></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-3 col-sm-3 col-xs-1"></div>
+    </div>
+</div>
+
+<div class="screenA" style="display: block"></div>
+</body>
+</html>
